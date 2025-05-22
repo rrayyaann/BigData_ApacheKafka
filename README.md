@@ -50,7 +50,7 @@ Langkah-langkah Implementasi
     ```jsx
     docker exec -it producer bash
     ```
-    Command 2
+    Command 2 (Opsional)
     ```jsx
     pip install kafka-python
     ```
@@ -74,12 +74,16 @@ Langkah-langkah Implementasi
 
 5. Konsumsi dan Olah Data dengan PySpark
     Jalankan skrip pyspark_consumer.py di `container spark`
+
+    Command 1
     ```jsx
     docker exec -it spark bash
     ```
+    Command 2 (Opsional)
     ```jsx
     pip install kafka-python
     ```
+    Command 3
     ```jsx
     spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 pyspark_consumer.py
     ```
